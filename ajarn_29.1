@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+	float a, b, c, d, e, f, g, h, i, j, avg;
+	printf("Enter all of your 10 student heights in cm.: ");
+	scanf_s("%f %f %f %f %f %f %f %f %f %f", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+	
+  if (a > 0 && b > 0 && c > 0 && d > 0 && e > 0 && f > 0 && g > 0 && h > 0 && i > 0 && j > 0)
+	{
+		avg = (a + b + c + d + e + f + g + h + i + j) / 10;
+		printf("The average height is : %f cm.\n", avg);
+		printf("The heights of your students are : %f %f %f %f %f %f %f %f %f %f", a, b, c, d, e, f, g, h, i, j);
+	}
+	else
+	{
+		printf("error");
+	}
+	
+  return 0;
+}
